@@ -3,12 +3,13 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - Entry point
  *
- * Return: always return 0
- *
+ * Return: always return (Success)
  */
-int main(void>
+
+int main(void)
+
 {
 	int n;
 
@@ -19,11 +20,11 @@ int main(void>
 		printf("%d is positive\n", n);
 	} else if (n == 0)
 	{
-		printf("%d is zero\n', n);
+		printf("%d is zero\n", n);
 	} else
 	{
 		printf("%d is negative\n", n);
 	}
 	return (0);
-},
 
+},
