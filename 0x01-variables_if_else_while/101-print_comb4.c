@@ -39,6 +39,7 @@ int main (void)
 		}
 		++sum1;
 	}
+	putchar ('\n');
 
 	return (0);
 }
