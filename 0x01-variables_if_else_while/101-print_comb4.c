@@ -29,8 +29,8 @@ int main (void)
 
 					if (sum1 + sum2 + sum3 != 24)
 					{
-						putchar(',');
-						putchar(' ');
+						putchar (',');
+						putchar (' ');
 					}
 				}
 				++sum3;
@@ -39,7 +39,7 @@ int main (void)
 		}
 		++sum1;
 	}
-	putchar('\n');
+	putchar ('\n');
 
 	return (0);
 }
