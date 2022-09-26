@@ -1,28 +1,29 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * print_diagsums - print the sum of the two
- *                 diagonals of a square matrix
- *                 of integers.
- * @a: input pointer
- * @size: size of the matrix
+ * print_chessboard - prints the chess board
  *
- * Return: nothing
+ * @a: input pointer
+ *
+ * Return: return nothing
 */
 
-void print_diagsums(int *a, int size)
+void print_chessboard(char (*a)[8])
 {
-	int i, S1, S2;
+	int i, j;
 
-	S1 = 0;
-	S2 = 0;
-
-	for (i = 0; i < (size * size); i++)
+	i = 0;
+	j = 0;
+	while (i < 64)
 	{
-		if (i % (size + 1) == 0)
-			S1 += a[i];
-		if (i % (size - 1) == 0 && i != 0 && i < size * size - 1)
-			S2 += a[i];
+		if (i % 8 == 0 && i != 0)
+		{
+			j = i;
+			_putchar('\n');
+		}
+
+		_putchar(a[i / 8][i - j]);
+		i++;
 	}
-	printf("%d, %d\n", S1, S2);
+	_putchar('\n');
 }
