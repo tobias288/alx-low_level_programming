@@ -1,17 +1,18 @@
 #include <stdio.h>
-#include "main.h"
+#define UNUSED(x) (void)(x)
 /**
- * main - a program that print al argument it receive
- * @argc: argument counter
- * @argv: argument value
- * Return: Always 0 success
+ * main - main function
+ * @argc: argumentc
+ * @argv: vector of arguments
+ *Return: always 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char  *argv[])
 {
-	while (argc--)
-	{
-		printf("%s\n", *argv++);
-	}
+	int i;
 
+	for (i = 0; i < argc; i++)
+	{
+		printf("%s\n", argv[i]);
+	}
 	return (0);
 }
