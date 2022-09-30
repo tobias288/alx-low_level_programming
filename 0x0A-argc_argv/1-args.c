@@ -1,15 +1,14 @@
 #include <stdio.h>
-#include "main.h"
+#define UNUSED(x) (void)(x)
 /**
- * main -  a program that prints the number of arguments passed into it.
- * @argc: argument counter
- * @argv: argument value
- * Return: Always 1 success
+ * main - main function
+ * @argc: argumentc
+ * @argv: vector of arguments
+ *Return: always 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char  *argv[])
 {
-	if (argv[0])
-		printf("%d\n", argc - 1);
-
+	UNUSED(argv);
+	printf("%d\n", argc - 1);
 	return (0);
 }
