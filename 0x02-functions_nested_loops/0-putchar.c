@@ -1,33 +1,17 @@
 #include "main.h"
-
 /**
+ * main - program print _putchar follow by new line
  *
- *  * main - program print _putchar follow by new line
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
- *     */
-
+ * Return: Always 0 (Success)
+ */
 int main(void)
-
 {
+	char str[8] = "_putchar";
+	int i;
 
-		char str[8] = "_putchar";
+	for (i = 0; i < 8; i++)
+		_putchar(str[i]);
+	_putchar('\n');
 
-			int i;
-
-
-
-				for (i = 0; i < 8; i++)
-
-							_putchar(str[i]);
-
-					_putchar('\n');
-
-
-
-						return (0);
-
+	return (0);
 }
